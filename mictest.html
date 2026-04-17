@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Learn | Technical Project & Placement Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+        }
+
+        .custom-card {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        #mobile-menu.open {
+            max-height: 600px;
+            opacity: 1;
+            padding-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 bg-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <div
+                        class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200">
+                        <i class="fas fa-graduation-cap text-white text-lg"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-tight leading-none">Nexus <span
+                                class="text-blue-600">Learn</span></span>
+                        <span class="text-[10px] text-slate-500 font-medium uppercase tracking-widest mt-1">Technical
+                            Partner</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#" class="hover:text-blue-600 transition">Home</a>
+                    <a href="#custom" class="hover:text-blue-600 transition">Custom Projects</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Catalog</a>
+                    <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="https://calendly.com/hello-mohdismail/new-meeting" target="_blank"
+                        class="text-slate-600 text-sm font-bold hover:text-blue-600 px-4 py-2">Book a Call</a>
+                    <a href="https://wa.link/xv5kp9" target="_blank"
+                        class="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-700 transition shadow-md flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-slate-600 p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-white px-6 border-t border-slate-50">
+            <div class="flex flex-col space-y-4 pt-4">
+                <a href="#" class="font-medium text-slate-700">Home</a>
+                <a href="#custom" class="font-medium text-slate-700">Custom Projects</a>
+                <a href="#projects" class="font-medium text-slate-700">Catalog</a>
+                <a href="https://calendly.com/hello-mohdismail/new-meeting" target="_blank"
+                    class="font-medium text-blue-600">Book a Call</a>
+                <a href="https://wa.link/xv5kp9" target="_blank"
+                    class="bg-blue-600 text-white text-center py-3 rounded-xl font-bold">WhatsApp Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg pt-32 pb-20 lg:pt-48 lg:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-3/5 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-6">
+                        <span class="text-xs font-bold text-blue-700 uppercase tracking-widest">ISO 9001:2015 Certified
+                            • TASK Partner</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]">
+                        Transform Your <span class="gradient-text">Technical Career</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 max-w-2xl mb-10 leading-relaxed">
+                        Complete end-to-end project assistance, technical skill development, and placement preparation
+                        for engineering students in Telangana & Andhra.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.link/xv5kp9" target="_blank"
+                            class="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-200 flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-3 text-xl"></i> Send Us a Message
+                        </a>
+                        <a href="https://calendly.com/hello-mohdismail/new-meeting" target="_blank"
+                            class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition flex items-center justify-center">
+                            <i class="far fa-calendar-alt mr-3"></i> Book Strategy Call
+                        </a>
+                    </div>
+
+                    <div class="mt-8 flex items-center justify-center lg:justify-start space-x-6">
+                        <a href="https://drive.google.com/file/d/1SlsZ2KdD8kWFkW32JJhUzr-M_BXGJu-k/view?usp=drive_link"
+                            target="_blank" class="text-blue-600 font-bold flex items-center hover:underline">
+                            <i class="fas fa-file-pdf mr-2"></i> Download 2026 Project List (100+)
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-2/5">
+                    <div class="bg-white p-2 rounded-3xl shadow-2xl border border-slate-100 rotate-2">
+                        <div class="bg-blue-600 rounded-2xl p-8 text-white relative overflow-hidden">
+                            <div class="relative z-10">
+                                <span class="text-blue-200 text-sm font-bold uppercase tracking-widest">Group Booking
+                                    Offer</span>
+                                <h3 class="text-2xl font-bold mt-2 mb-4">Celebratory Group Meal! 🍕</h3>
+                                <p class="text-blue-100 text-sm mb-6">Book as a project group (3-4 members) and receive
+                                    a Zomato Voucher for your team.</p>
+                                <div class="w-full h-1 bg-white/20 rounded-full mb-4"></div>
+                                <p class="text-xs font-medium opacity-80">Serving Hyderabad, Warangal & Andhra</p>
+                            </div>
+                            <i
+                                class="fas fa-pizza-slice absolute -bottom-4 -right-4 text-8xl text-white/10 -rotate-12"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Custom Projects Specialization -->
+    <section id="custom" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="custom-card rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-12 opacity-10">
+                    <i class="fas fa-code text-[200px]"></i>
+                </div>
+                <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div
+                            class="inline-flex items-center space-x-2 bg-blue-500/20 text-blue-300 px-4 py-1.5 rounded-full mb-6 text-xs font-bold uppercase tracking-widest border border-blue-500/30">
+                            Our Core Specialization
+                        </div>
+                        <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">We Build <span
+                                class="text-blue-400">Custom Projects</span> From Scratch</h2>
+                        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                            While we have a vast catalog, we specialize in **Unique Custom Projects**. You bring us any
+                            topic or research paper, and our technical team will develop the complete solution tailored
+                            specifically to your requirements.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                </div>
+                                <p class="font-medium">You provide the idea, we handle the implementation.</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <p class="font-medium">Specialization in AI, ML, IoT, and Cloud architectures.</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.link/xv5kp9" target="_blank"
+                            class="mt-10 inline-block bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition">Discuss
+                            Your Custom Topic</a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+                            <h4 class="text-blue-400 font-bold text-xl mb-2">100%</h4>
+                            <p class="text-slate-400 text-sm">Unique Codebase</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+                            <h4 class="text-blue-400 font-bold text-xl mb-2">Custom</h4>
+                            <p class="text-slate-400 text-sm">UML & Documentation</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+                            <h4 class="text-blue-400 font-bold text-xl mb-2">24/7</h4>
+                            <p class="text-slate-400 text-sm">Technical Mentor Access</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+                            <h4 class="text-blue-400 font-bold text-xl mb-2">Direct</h4>
+                            <p class="text-slate-400 text-sm">Code Walkthroughs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">What You Get in ₹6,500</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-2xl border border-slate-200">
+                    <div class="text-blue-600 text-2xl mb-4"><i class="fas fa-code-branch"></i></div>
+                    <h3 class="font-bold mb-2">Source Code</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Full implementation with Frontend, Backend, and
+                        Database.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200">
+                    <div class="text-purple-600 text-2xl mb-4"><i class="fas fa-book-open"></i></div>
+                    <h3 class="font-bold mb-2">Professional Docs</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">60+ page project reports, Base papers, and PPTs.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200">
+                    <div class="text-orange-600 text-2xl mb-4"><i class="fab fa-github"></i></div>
+                    <h3 class="font-bold mb-2">GitHub Portfolio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">We host your code on GitHub to impress recruiters.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200">
+                    <div class="text-green-600 text-2xl mb-4"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3 class="font-bold mb-2">Viva Support</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Detailed technical explanation to handle external
+                        examiners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Catalog Preview -->
+    <section id="projects" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Catalog Highlights</h2>
+                    <p class="text-slate-600">Explore over 110 pre-designed topics or ask for a custom one.</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <a href="https://drive.google.com/file/d/1SlsZ2KdD8kWFkW32JJhUzr-M_BXGJu-k/view?usp=drive_link"
+                        target="_blank"
+                        class="bg-slate-100 text-slate-700 px-5 py-2.5 rounded-lg text-sm font-bold flex items-center hover:bg-slate-200 transition">
+                        <i class="fas fa-download mr-2"></i> Full PDF
+                    </a>
+                    <a href="https://wa.link/xv5kp9" target="_blank"
+                        class="bg-blue-600 text-white px-5 py-2.5 rounded-lg text-sm font-bold flex items-center hover:bg-blue-700 shadow-lg shadow-blue-100">
+                        Discuss Topic
+                    </a>
+                </div>
+            </div>
+
+            <div id="projectGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Sample dynamic projects -->
+                <div class="border border-slate-100 p-6 rounded-2xl hover:bg-blue-50/30 transition group">
+                    <div class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">PANDSP010</div>
+                    <h4 class="font-bold text-slate-900 mb-4 leading-snug">Classification of knee osteoarthritis
+                        severity using CNN</h4>
+                    <span
+                        class="text-xs bg-white border border-slate-200 px-2.5 py-1 rounded-full text-slate-500 font-medium">Medical
+                        AI</span>
+                </div>
+                <div class="border border-slate-100 p-6 rounded-2xl hover:bg-blue-50/30 transition group">
+                    <div class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">PANDSP001</div>
+                    <h4 class="font-bold text-slate-900 mb-4 leading-snug">Escape room design using Augmented Reality
+                    </h4>
+                    <span
+                        class="text-xs bg-white border border-slate-200 px-2.5 py-1 rounded-full text-slate-500 font-medium">AR
+                        / VR</span>
+                </div>
+                <div class="border border-slate-100 p-6 rounded-2xl hover:bg-blue-50/30 transition group">
+                    <div class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">PANDSP023</div>
+                    <h4 class="font-bold text-slate-900 mb-4 leading-snug">ChatGPT-based Sentiment Analysis for Business
+                        Intelligence</h4>
+                    <span
+                        class="text-xs bg-white border border-slate-200 px-2.5 py-1 rounded-full text-slate-500 font-medium">NLP
+                        / AI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-slate-900 overflow-hidden relative">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Transparent Pricing</h2>
+            <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative">
+                <div
+                    class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+                    Enrollment Open</div>
+
+                <div class="mb-8">
+                    <p class="text-slate-500 font-bold uppercase tracking-widest text-sm mb-2">Complete Assistance
+                        Package</p>
+                    <div class="flex justify-center items-baseline">
+                        <span class="text-6xl font-black text-slate-900">₹6,500</span>
+                        <span class="text-slate-500 ml-2 font-medium">/ student</span>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4 text-left mb-10">
+                    <div class="flex items-center space-x-3 text-slate-700 font-medium">
+                        <i class="fas fa-check-circle text-green-500"></i>
+                        <span>Custom Development</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-700 font-medium">
+                        <i class="fas fa-check-circle text-green-500"></i>
+                        <span>Technical Documentation</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-700 font-medium">
+                        <i class="fas fa-check-circle text-green-500"></i>
+                        <span>Source Code Walkthrough</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-700 font-medium">
+                        <i class="fas fa-check-circle text-green-500"></i>
+                        <span>Placement Training</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <a href="https://wa.link/xv5kp9" target="_blank"
+                        class="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 transition shadow-xl shadow-blue-100">
+                        Book Your Project (WhatsApp)
+                    </a>
+                    <a href="https://calendly.com/hello-mohdismail/new-meeting" target="_blank"
+                        class="w-full border-2 border-slate-200 text-slate-700 py-4 rounded-2xl font-bold hover:bg-slate-50 transition">
+                        Schedule Call with Ismail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white pt-24 pb-12 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-12 mb-20">
+                <div class="lg:col-span-1">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold text-slate-900">Nexus Learn</span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">A Division of Nexus Data Solutions.
+                        Sanathnagar, Hyderabad, Telangana, 500018.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-6">Direct Links</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="https://wa.link/xv5kp9" class="hover:text-blue-600">WhatsApp Support</a></li>
+                        <li><a href="https://calendly.com/hello-mohdismail/new-meeting" class="hover:text-blue-600">Book
+                                Meeting</a></li>
+                        <li><a href="https://drive.google.com/file/d/1SlsZ2KdD8kWFkW32JJhUzr-M_BXGJu-k/view?usp=drive_link"
+                                class="hover:text-blue-600">Project Catalog PDF</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-6">Contact</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3 text-sm text-slate-600">
+                            <i class="fas fa-phone text-blue-600"></i>
+                            <span>+91 7032229659</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-sm text-slate-600">
+                            <i class="fas fa-envelope text-blue-600"></i>
+                            <span class="break-all">ismail@nexusdatasolution.org</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>About Us</li>
+                        <li>Student Testimonials</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-100 text-center text-xs text-slate-400">
+                <p>© 2026 Nexus Learn. ISO 9001:2015 Certified Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Simple scroll to reveal effects could be added here
+    </script>
+</body>
+
+</html>
